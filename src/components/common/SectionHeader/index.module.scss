@@ -1,0 +1,78 @@
+@import '../../../sass/base.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+.arContainer {
+  flex-direction: row-reverse;
+
+  @media (max-width: 767px) {
+    align-items: flex-start;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.arTitleContainer {
+  //   justify-content: flex-end;
+  direction: rtl;
+  width: 100%;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 300;
+  color: $white-color;
+  margin-bottom: 20px;
+  @media (max-width: 767px) {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 40px;
+  }
+}
+
+.moreButton {
+  background-color: $secondary-color-dark;
+  color: $white-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  min-width: 200px;
+  &:hover {
+    background-color: $black-color;
+    color: $white-color;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}

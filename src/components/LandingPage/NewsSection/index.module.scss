@@ -1,0 +1,50 @@
+@import '/src/sass/base.scss';
+
+.newsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.headline {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+}
+
+.sideNews {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

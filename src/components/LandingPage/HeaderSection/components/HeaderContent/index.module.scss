@@ -1,0 +1,85 @@
+@import '../../../../../sass/base.scss';
+
+.container {
+  // background-image: url('/src/assets/hero-background.png');
+  // background-size: 100% 110%;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  min-height: 120%;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &.arLang {
+    direction: rtl;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0;
+  }
+
+  @media (max-width: 1023px) and (min-width: 768px) {
+    // background-position: center;
+    // justify-content: center;
+  }
+
+  @media (max-width: 767px) {
+    background-position: center;
+    justify-content: center;
+  }
+}
+
+.content {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .title {
+    color: $white-color;
+    font-weight: 300;
+  }
+
+  .headTitle {
+    font-size: 50px;
+    font-weight: 300;
+    color: $secondary-color-dark;
+    text-transform: uppercase;
+  }
+
+  .paragraph {
+    color: $white-color;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  &.arContent {
+    align-items: flex-start;
+    padding-right: 150px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50%;
+    height: 50%;
+  }
+
+  @media (max-width: 1023px) and (min-width: 768px) {
+    width: 60%;
+    height: 60%;
+  }
+
+  @media (max-width: 767px) {
+    width: 80%;
+    height: auto;
+    align-items: center;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,104 @@
+@import '../../../sass/base.scss';
+
+.container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
+}
+
+.part {
+  width: 50%;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .titleContainer {
+    width: 50%;
+
+    @media (max-width: 1023px) {
+      width: 80%;
+    }
+  }
+
+  .title {
+    color: $secondary-color-dark;
+    font-size: 60px;
+    font-weight: 200;
+    text-transform: uppercase;
+    @media (max-width: 1023px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 36px;
+    }
+  }
+
+  .paragraphContainer {
+    margin-top: 40px;
+    width: 50%;
+    text-transform: uppercase;
+
+    @media (max-width: 1023px) {
+      width: 80%;
+    }
+  }
+
+  .paragraph {
+    color: $white-color;
+    font-weight: 300;
+    font-size: 20px;
+
+    @media (max-width: 1023px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.partContainer {
+  display: flex;
+  justify-content: flex-end;
+
+  .imgContainer {
+    width: 90%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 150%;
+      height: 110%;
+
+      @media (max-width: 1023px) {
+        width: 120%;
+      }
+
+      @media (max-width: 767px) {
+        width: 130%;
+        height: auto;
+        position: static;
+      }
+    }
+  }
+}

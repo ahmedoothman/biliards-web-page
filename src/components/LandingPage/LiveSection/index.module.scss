@@ -1,0 +1,50 @@
+@import '../../../sass/base.scss';
+
+.titleContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.arTitleContainer {
+  justify-content: flex-end;
+}
+.title {
+  font-size: 40px;
+  font-weight: 300;
+  color: $white-color;
+  margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 40px;
+  }
+}
+
+.matchesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}

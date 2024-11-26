@@ -1,0 +1,12 @@
+@import '../../../sass/base.scss';
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  flex-grow: 1;
+  position: relative;
+  background-image: url('/src/assets/hero-background.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

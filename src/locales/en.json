@@ -1,0 +1,50 @@
+{
+  "title": "Welcome to React",
+  "navBar": {
+    "home": "Home",
+    "about": "About",
+    "live": "Live in Jeddah",
+    "media": "Media Center",
+    "matches": "Matches",
+    "contact": "Contact Us"
+  },
+  "headerContent": {
+    "title": "Experience The Best",
+    "headTitle": "Pool Game Ever.",
+    "paragraph": "Taking Place in Jeddah Saudi Arabia",
+    "subParagraph": "3 - 8 June 2024"
+  },
+  "about": {
+    "title": "A Game of Skill And Speed",
+    "paragraph": "Get Your Chance to Watch these talented players."
+  },
+  "matches": {
+    "live": "Live",
+    "upcoming": "Upcoming",
+    "vs": "VS"
+  },
+  "topPlayers": {
+    "title": "Top Players",
+    "actionTitle": "See All Players",
+    "points": "Points",
+    "wins": "Wins"
+  },
+  "news": {
+    "title": "Latest News",
+    "seeMore": "See More"
+  },
+  "participantsSection": {
+    "title": "Participants"
+  },
+  "aboutGame": {
+    "title": "About",
+    "paragraph": "The game of billiards is played on a rectangular table covered with a green cloth, or baize, with six pockets, one at each corner and one in the middle of each long side. A full-size table is 12 feet (3.7 m) long and 6 feet (1.8 m) wide. ",
+    "button": "Read More"
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "organizers": {
+    "title": "Organizers"
+  }
+}
