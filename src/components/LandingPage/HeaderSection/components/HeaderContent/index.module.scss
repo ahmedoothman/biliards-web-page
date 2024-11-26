@@ -1,10 +1,6 @@
 @import '../../../../../sass/base.scss';
 
 .container {
-  // background-image: url('/src/assets/hero-background.png');
-  // background-size: 100% 110%;
-  // background-position: center;
-  // background-repeat: no-repeat;
   min-height: 120%;
   position: absolute;
   top: -50px;
@@ -24,12 +20,10 @@
   }
 
   @media (max-width: 1023px) and (min-width: 768px) {
-    // background-position: center;
-    // justify-content: center;
+    justify-content: center;
   }
 
   @media (max-width: 767px) {
-    background-position: center;
     justify-content: center;
   }
 }
